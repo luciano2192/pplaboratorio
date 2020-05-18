@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1589601202 source:c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\utn_funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"./utn_funciones.h"
+
+1589601812 c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\utn_funciones.h
+
+1589842281 source:c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\main.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589838956 c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\clientes.h
+
+1589841842 c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\mascotas.h
+
+1589842223 source:c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\mascotas.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589839456 source:c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\clientes.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589841325 c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\clientemascota.h
+	"mascotas.h"
+	"clientes.h"
+	"utn_funciones.h"
+
+1589841303 source:c:\users\lucho\documents\utn\labo_uno\grecoluciano - parcialpp\parcial\clientemascota.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
