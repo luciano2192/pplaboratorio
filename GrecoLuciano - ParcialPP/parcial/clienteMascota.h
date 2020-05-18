@@ -23,3 +23,5 @@ void imprimirListadoMascotasMayoresATresAnios( eMascota listadoMascotas[] , eCli
 void mostrarClientesOrdenadosPorCantidadDeMascotas( eMascota listadoMascotas[] , int lenM ,  eCliente listadoClientes[] , int lenC );
 
 void mostrarClientesOrdenadosPorCantidadDeMascotasYNombreCliente( eMascota listadoMascotas[] , int lenM ,  eCliente listadoClientes[] , int lenC );
+
+int modificarMascota( eMascota listadoMascotas[] , int len , eCliente listadoClientes[] , int lenC );

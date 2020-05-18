@@ -55,8 +55,6 @@ int bajaMascota( eMascota listadoMascotas[] , int len , int id );
 
 int eliminarMascota( eMascota listadoMascotas[] , int len );
 
-int modificarMascota( eMascota listadoMascotas[] , int len );
-
 void imprimirListadoMascotasPorTipo( eMascota listadoMascotas[] , int lenM );
 
 void edadPromedioMascotas( eMascota listadoMascotas[] , int lenM );
@@ -68,3 +66,5 @@ int addMascotaSeleccionandoRaza( eMascota listadoMascotas[] , int len , int idCl
 void imprimirColumnasTablaRazas();
 
 int imprimirRazas( eRaza listadoRazas[] , int len );
+
+int menuModificarMascota();

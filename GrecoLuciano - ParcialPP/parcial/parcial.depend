@@ -41,3 +41,45 @@
 	<string.h>
 	"clienteMascota.h"
 
+1589841303 source:c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\clientemascota.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589843292 c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\clientemascota.h
+	"mascotas.h"
+	"clientes.h"
+	"utn_funciones.h"
+
+1589843424 c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\mascotas.h
+
+1589838956 c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\clientes.h
+
+1589601812 c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\utn_funciones.h
+
+1589842864 source:c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\clientes.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589842281 source:c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\main.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589843418 source:c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\mascotas.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	"clienteMascota.h"
+
+1589601202 source:c:\users\lucho\documents\utn\pplaboratorio\grecoluciano - parcialpp\parcial\utn_funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"./utn_funciones.h"
+

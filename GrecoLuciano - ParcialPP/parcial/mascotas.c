@@ -44,7 +44,7 @@ void harcodeoListadoRaza( eRaza listadoRazas[] , int len ) {
     };
 }
 
-int menuModificar() {
+int menuModificarMascota() {
     int menu;
     printf( "\n" );
     printf( "\n1) Nombre" );
@@ -53,8 +53,9 @@ int menuModificar() {
     printf( "\n4) Edad" );
     printf( "\n5) Peso" );
     printf( "\n6) Sexo" );
-    printf( "\n7) Salir.\n" );
-    printf( "\nSeleccionar una opcion <1-7>: " );
+    printf( "\n7) Duenio.\n" );
+    printf( "\n8) Salir.\n" );
+    printf( "\nSeleccionar una opcion <1-8>: " );
     scanf( "%d" , &menu );
     printf("\n");
     return menu;
@@ -321,79 +322,6 @@ int eliminarMascota( eMascota listadoMascotas[] , int len ) {
     return salida;
 }
 
-int modificarMascota( eMascota listadoMascotas[] , int len ) {
-    int salida = -1;
-    int menuMod;
-    int indexMascota;
-    int auxID;
-    char auxName[30];
-    char auxTipo[30];
-    char auxRaza[30];
-    int auxEdad;
-    float auxPeso;
-    char auxSexo;
-    imprimirMascotas( listadoMascotas , len );
-    getDatoGenericoInt( &auxID , "\nIngrese ID de la mascota: " , "ERROR ! ingrese nuevamente el ID" , 0 , len , 3 );
-    printf( "\nQue desea modificar ?\n" );
-    menuMod = menuModificar();
-    indexMascota = buscarMascotaPorID( listadoMascotas , len , auxID );
-    switch(menuMod) {
-        case 1:
-            getDatoGenericoString( auxName , "Ingrese nombre: " , "ERROR ! ingrese nuevamente su nombre" , 30 );
-            formatearString(auxName);
-            strcpy( listadoMascotas[indexMascota].name , auxName );
-            printf( "\nNombre modificado con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 2:
-            getDatoGenericoString( auxTipo , "Ingrese tipo mascota <PERRO-GATO-RARO>: " , "ERROR ! ingrese nuevamente el tipo" , 30 );
-            formatearString(auxTipo);
-            strcpy( listadoMascotas[indexMascota].tipo , auxTipo );
-            printf( "\nTipo modificado con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 3:
-            getDatoGenericoString( auxRaza , "Ingrese raza: " , "ERROR ! ingrese nuevamente la raza" , 30 );
-            strcpy( listadoMascotas[indexMascota].raza , auxRaza );
-            printf( "\nRaza modificada con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 4:
-            getDatoGenericoInt( &auxEdad , "Ingrese edad: " , "ERROR ! ingrese nuevamente la edad" , 0 , 30 , 3 );
-            listadoMascotas[indexMascota].edad = auxEdad;
-            printf( "\nEdad modificada con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 5:
-            getDatoGenericoFloat( &auxPeso , "Ingrese el peso: " , "ERROR ! ingrese nuevamente el peso" , 0.0 , 3000.0 , 3 );
-            listadoMascotas[indexMascota].peso = auxPeso;
-            printf( "\nPeso modificado con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 6:
-            auxSexo = getDatoGenericoChar("Ingrese el sexo <m-f>: ","ERROR ! ingrese el caracter correspondiente",'m','f');
-            listadoMascotas[indexMascota].sexo = auxSexo;
-            printf( "\nSexo modificado con exito.\n" );
-            imprimirColumnasTablaMascotas();
-            imprimirUnaMascota( listadoMascotas[indexMascota] );
-            salida = 0;
-            break;
-        case 7:
-            salida = 0;
-            break;
-    }
-    return salida;
-}
 
 void imprimirListadoMascotasPorTipo( eMascota listadoMascotas[] , int lenM ) {
     char auxTipo[30];
